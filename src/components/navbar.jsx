@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import CitySearch from './filterSearch_navbar';
 import { List } from 'phosphor-react';
+import { useNavigate } from 'react-router';
 
 function NavBar(){
 
     const [isListOpen, setIsListOpen] = useState(false);
-    
+    let navigate = useNavigate();
+
     return (
         <div>
             <nav className="weathr-nav body-container shadow">
                 <div className='nav-header'>
-                    <div className="title"><span>Weather live</span></div>
+                    <div className="title" onClick={()=>navigate("/")}>
+                        <span>Weather live</span>
+                    </div>
                     <div className="list-icon" onClick={() => setIsListOpen(!isListOpen)}>
                         <List size={32}></List>
                     </div>

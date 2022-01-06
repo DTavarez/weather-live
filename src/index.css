@@ -24,7 +24,7 @@ code {
 }
 
 .shadow{
-  box-shadow: 0px 1px 3px 1px rgb(0 0 0 / 15%);
+  box-shadow: 0px 1px 3px 1px rgb(0 0 0 / 25%);
 }
 
 /* NAV BAR*/
@@ -131,5 +131,79 @@ code {
   vertical-align: middle;
 }
 
+/* WEATHER DSIPLAY RESUME */
+
+.weathr-resume{
+  width: 250px;
+  margin: 0px auto;
+  border: 2px solid #595959;
+  border-radius: 18px;
+  padding: 15px 20px;
+}
+
+.resume-main{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-main .resume-title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resume-main .resume-description{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.resume-main .resume-condition{
+  display: flex;
+}
+
+.resume-main .resume-condition span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.resume-details{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-conditions{
+  display: grid;
+  text-align: left;
+}
+
+.other-conditions span{
+  font-size: 14px;
+}
+
+.temps-mm{
+  display: flex;
+}
+
+.temps-mm .max{
+  font-size: 15px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.temps-mm .min{
+  font-size: 13px;
+  color: #808080;
+  padding-left: 6px;
+  display: table-cell;
+  vertical-align: middle;
+}
 
 
+@media (min-width: 500px) {
+  .weathr-resume{
+    width: 500px;
+    margin: 0px auto;
+    border: 2px solid #595959;
+    border-radius: 18px;
+    padding: 30px;
+  }
+}
