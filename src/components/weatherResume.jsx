@@ -2,6 +2,7 @@
 
 function WeatherResume({weatherInfo}){
 
+  console.log(weatherInfo);
   return(
     <div className='weathr-resume shadow'>
       <div className='resume-main'>

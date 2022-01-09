@@ -1,0 +1,1 @@
+export const examplesCities = ['london', 'paris', 'milan'];

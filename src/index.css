@@ -27,7 +27,27 @@ code {
   box-shadow: 0px 1px 3px 1px rgb(0 0 0 / 25%);
 }
 
-/* NAV BAR*/
+.banner{
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+}
+
+@media (min-width: 500px) {
+  .banner{
+    width: 60%;
+  }
+}
+
+
+
+@media (min-width: 500px) {
+  .weather-previews{
+    justify-content: center;
+  }
+}
+/* NAV BAR */
 
 .weathr-nav{
   display: block;
@@ -45,6 +65,7 @@ code {
   font-size: 20px;
   font-weight: bolder;
   display: table;
+  cursor: pointer;
 }
 
 .nav-header .title span{
@@ -106,8 +127,6 @@ code {
     display: flex;
   }  
 }
-
-
 
 .weathr-search-navbar{
   display: table;
@@ -200,7 +219,7 @@ code {
 
 @media (min-width: 500px) {
   .weathr-resume{
-    width: 500px;
+    width: 300px;
     margin: 0px auto;
     border: 2px solid #595959;
     border-radius: 18px;

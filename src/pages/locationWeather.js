@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import NavBar from '../components/navbar';
 import WeatherResume from '../components/weatherResume';
 import { useSearchParams} from 'react-router-dom';
-import {config} from '../config/config'
+import {config} from '../utils/config'
 import axios from 'axios';
 
 function LocationWeather() {
@@ -14,7 +14,7 @@ function LocationWeather() {
 
   async function getWeatherInfo(name){
     const url = "https://api.openweathermap.org/data/2.5/weather?appid=" + config.weatherApiKey + "&q=" + String(name);
-
+    
     try {
       const res = await axios.get(url);
       console.log(res);
@@ -54,7 +54,6 @@ function LocationWeather() {
     }else{
       setSearchError(true);
     }
-  
   }, [searchParams]);
   
   return (
